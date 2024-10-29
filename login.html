@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <style>
+        body{
+            background-image: url(https://static.toiimg.com/photo/msid-87511571/87511571.jpg);
+        }
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        .login-container {
+            background-color:rgb(rgba(210, 27, 213, 0.589), green, blue);
+            width: 35%;
+            padding: 4%;
+        }
+        .form-field label {
+            font-size: 1.4rem;
+            font-weight: bold;
+        }
+        .form-field input {
+            padding: 10px;
+            width: 80%;
+            margin: 10px 0;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 1.1rem;
+            cursor: pointer;
+        }
+        .image-container img {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+        }
+        @media(max-width:430px){
+            .container{
+                flex-direction: column;
+            }
+
+        }
+        .image-container{
+            -ms-ime-mode: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="login-container">
+            <h2>Login</h2>
+            <form action="">
+                <div class="form-field">
+                    <label for="username">Username</label><br/>
+                    <input type="email" placeholder="Enter email ID" name="email" required />
+                </div>
+                <div class="form-field">
+                    <label for="password">Password</label><br/>
+                    <input type="password" placeholder="Enter your password" name="password" required />
+                </div>
+                <button type="submit">Login</button>
+                <p>Don't have an account? <a href="#">Sign up here</a></p>
+                <p>
+                    Diwali, also known as the Festival of Lights, is a vibrant celebration in India and among communities worldwide. It symbolizes the victory of light over darkness and good over evil. Celebrated over five days, it involves rituals like cleaning homes, decorating with rangoli, and lighting oil lamps (diyas). Families gather to share sweets, perform prayers (puja) to Goddess Lakshmi for prosperity, and enjoy fireworks. Diwali fosters unity and joy, with communities coming together for festivities. Traditional dances, music, and the exchange of gifts enhance the spirit of the celebration, making it a cherished occasion for millions.
+                </p>
+            </form>
+        </div>
+        <div class="image-container">
+            <img src="https://www.shutterstock.com/shutterstock/photos/2316468215/display_1500/stock-vector-diwali-diya-isolated-on-white-vector-illustration-2316468215.jpg" alt="Login illustration">
+        </div>
+    </div>
+</body>
+</html>
