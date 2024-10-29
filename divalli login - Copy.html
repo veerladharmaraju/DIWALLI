@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <style>
+        body{
+        background-image: url(https://pixahive.com/wp-content/uploads/2020/11/Diwali-crackers-189622-pixahive.jpg);
+
+        }
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        .login-container {
+            background-color:rgb(rgba(210, 27, 213, 0.589), green, blue);
+            width: 35%;
+            padding: 4%;
+        }
+        .form-field label {
+            font-size: 1.4rem;
+            font-weight: bold;
+             color: blue;
+        }
+        .form-field input {
+            padding: 10px;
+            width: 80%;
+            margin: 10px 0;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 1.1rem;
+            cursor: pointer;
+        }
+        .image-container img {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+        }
+        @media(max-width:430px){
+            .container{
+                width: 80%;
+            }
+        }
+        .title{
+            color: brown;
+        }
+        .color{
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="login-container">
+            <h2 class="title">Login</h2>
+            <form action="">
+                <div class="form-field">
+                    <label for="username">Username</label><br/>
+                    <input type="email" placeholder="Enter email ID" name="email" required />
+                </div>
+                <div class="form-field">
+                    <label for="password">Password</label><br/>
+                    <input type="password" placeholder="Enter your password" name="password" required />
+                </div>
+                <button type="submit">Login</button>
+                <p>Don't have an account? <a href="#">Sign up here</a></p>
+                <div class="color">
+                    <p>
+                        Festival of Lights: Diwali, also known as Deepavali, is celebrated as the Festival of Lights, symbolizing the victory of light over darkness and good over evil.
+            
+            Religious Significance: It holds significance for Hindus, Jains, Sikhs, and some Buddhists. For Hindus, it marks the return of Lord Rama to Ayodhya after defeating Ravana.
+            
+            Rituals and Traditions: Celebrations typically include lighting oil lamps (diyas), decorating homes
+                    </p>
+                </div>
+            </form>
+        </div>
+        <div class="image-container">
+            <img src="https://w7.pngwing.com/pngs/753/289/png-transparent-diwali-diwali-holidays-diwali-tableware-thumbnail.png" alt="Login illustration">
+        </div>
+    </div>
+</body>
